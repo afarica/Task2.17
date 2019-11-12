@@ -1,12 +1,26 @@
+# Write the code which will write excepted data to files below
+# For example given offices of Google:
+# 1) google_kazakstan.txt
+# 2) google_paris.txt
+# 3)google_uar.txt
 a=input("Enter your word:")
 if a=='Hello':
-	print(
-		"google_kazakstan.txt" /n
-		"google_paris.txt" /n
-		"google_uar.txt" /n
-		"google_kyrgystan.txt" /n
-		"google_san_francisco.txt" /n
-		"google_germany.txt" /n
-		"google_moscow.txt" /n
-		"google_sweden.txt")
-
+	print('1 -google_kz.txt 2-google_paris.txt 3-google_uar.txt')
+	if int(input())==1:
+		myfile1=open('google_kz','w')
+        print("Name of a file is: ",myfile1.name)
+        myfile1.write(input())
+        print(myfile1)
+        myfile1.close()
+    elif int(input())==2:
+    	myfile2=open('google_paris','w')
+    	print("Name of a file is: ",myfile2.name)
+    	myfile2.write(input())
+    	print(myfile2)
+    	myfile2.close()
+    elif int(input())==3:
+    	myfile3=open('google-uar', 'w')
+    	print("Name of a file is: ",myfile3.name)
+    	myfile3.write(input())
+    	print(myfile3)
+    	myfile3.close()
