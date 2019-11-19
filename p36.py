@@ -7,7 +7,7 @@ a=input("Enter your word:")
 if a=='Hello':
     print('1 -google_kz.txt 2-google_paris.txt 3-google_uar.txt')
     b=int(input())
-	if  b==1:
+	if b==1:
 		myfile1 = open('google_kz.txt','w')
 		print("Name of a file is: ",myfile1.name)
 		myfile1.write(input())
